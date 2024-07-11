@@ -1,39 +1,39 @@
 import React, { useState } from 'react';
 
-const projects = [
-  {
-    name: 'Authentication',
-    description: 'Login and signup with password encryption and token stored in cookies.',
-    github: 'https://github.com/murali1818/Authentication.git',
-    demo: 'https://project-one-demo.com',
-    image: '/images/login.png'
-  },
-  {
-    name: 'TaskManager',
-    description: 'Managing tasks.',
-    github: 'https://github.com/murali1818/TaskManager.git',
-    demo: 'https://taskmanager-demo.com',
-    image: '/images/tm.png'
-  },
-  {
-    name: 'Bitweb',
-    description: 'A web-based bidding application enabling users to sell and purchase products through auctions. Developed complete functionality for both selling and bidding processes.',
-    github: 'https://github.com/murali1818/Bitweb.git',
-    demo: 'https://bitweb-demo.com',
-    image: '/images/bit.png'
-  },
-  {
-    name: 'SS-Media',
-    description: 'An online e-learning platform where learners can enroll in and access courses, while instructors manage their content and track progress, fostering an interactive educational environment.',
-    github: 'https://github.com/murali1818/SS-Media.git',
-    demo: 'https://ssmedia-demo.com',
-    image: '/images/ss.png'
-  },
-];
-
 const Projects = () => {
   const [currentProjects, setCurrentProjects] = useState([0, 1]);
   const [animation, setAnimation] = useState('');
+
+  const projects = [
+    {
+      name: 'Authentication',
+      description: 'Login and signup with password encryption and token stored in cookies.',
+      github: 'https://github.com/murali1818/Authentication.git',
+      demo: 'https://project-one-demo.com',
+      image: '/images/login.png'
+    },
+    {
+      name: 'TaskManager',
+      description: 'Managing tasks.',
+      github: 'https://github.com/murali1818/TaskManager.git',
+      demo: 'https://taskmanager-demo.com',
+      image: '/images/tm.png'
+    },
+    {
+      name: 'Bitweb',
+      description: 'A web-based bidding application enabling users to sell and purchase products through auctions. Developed complete functionality for both selling and bidding processes.',
+      github: 'https://github.com/murali1818/Bitweb.git',
+      demo: 'https://bitweb-demo.com',
+      image: '/images/bit.png'
+    },
+    {
+      name: 'SS-Media',
+      description: 'An online e-learning platform where learners can enroll in and access courses, while instructors manage their content and track progress, fostering an interactive educational environment.',
+      github: 'https://github.com/murali1818/SS-Media.git',
+      demo: 'https://ssmedia-demo.com',
+      image: '/images/ss.png'
+    },
+  ];
 
   const handlePrev = () => {
     setAnimation('slide-out-left');
@@ -53,7 +53,7 @@ const Projects = () => {
 
   return (
     <div className="min-h-screen flex flex-col justify-center bg-about-bg bg-cover bg-center bg-opacity-20">
-      <div className="flex flex-col items-center justify-center min-h-screen space-y-6 p-6 md:p-20 bg-black bg-opacity-40 ">
+      <div className="flex flex-col items-center justify-center min-h-screen space-y-6 p-6 md:p-20 bg-black bg-opacity-40">
         <h1 className="lg:text-5xl text-3xl font-bold text-white mb-5">Projects</h1>
         <div className="flex flex-col sm:flex-row justify-between w-full max-w-5xl space-y-6 sm:space-y-0 sm:space-x-6">
           <button
