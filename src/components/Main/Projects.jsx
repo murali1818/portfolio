@@ -64,7 +64,7 @@ const Projects = () => {
           </button>
           <div className={`grid grid-row-2 md:grid-cols-2 md:gap-5 justify-center items-center ${animation}`}>
             {currentProjects.map(index => (
-              <div key={index} className="relative group w-60 sm:w-auto h-40 sm:h-64 mb-8 bg-gray-800 rounded-lg overflow-hidden shadow-lg shadow-black transform transition-all duration-300 hover:scale-105">
+              <div key={index} className="relative group w-60 sm:w-96 h-40 sm:h-64 mb-8 bg-gray-800 rounded-lg overflow-hidden shadow-lg shadow-black transform transition-all duration-300 hover:scale-105">
                 <img src={projects[index].image} alt={projects[index].name} className="w-full h-full object-cover" />
                 <div className="absolute bottom-0 w-full bg-black bg-opacity-60 p-2 text-center">
                   <h2 className="text-xl sm:text-2xl font-bold text-white">{projects[index].name}</h2>
