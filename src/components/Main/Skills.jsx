@@ -1,11 +1,11 @@
 import React from 'react';
-import javaLogo from './images/java-logo.png';
-import htmlLogo from './images/html-logo.png';
-import cssLogo from './images/css-logo.png';
-import jsLogo from './images/js-logo.png';
-import reactLogo from './images/react-logo.png';
-import nodeLogo from './images/node-logo.png';
-import mongodbLogo from './images/mongodb-logo.png';
+import javaLogo from '../images/java-logo.png';
+import htmlLogo from '../images/html-logo.png';
+import cssLogo from '../images/css-logo.png';
+import jsLogo from '../images/js-logo.png';
+import reactLogo from '../images/react-logo.png';
+import nodeLogo from '../images/node-logo.png';
+import mongodbLogo from '../images/mongodb-logo.png';
 
 const skills = [
     { name: 'Java', level: 85, logo: javaLogo },
