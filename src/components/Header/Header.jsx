@@ -3,6 +3,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faMoon, faSun, faTimes } from '@fortawesome/free-solid-svg-icons';
 
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem('theme') === 'dark');
@@ -33,7 +34,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
         <div className="flex items-center">
-            <img className="h-12 w-12" src={isDarkMode ? "./images/logo-dark.png" : "./images/logo.png"} alt="Logo" />
+            <img className="h-12 w-12" src={isDarkMode ? "./images/logo-dark.png": "./images/logo.png"} alt="Logo" />
           </div>
           <nav className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">

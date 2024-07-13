@@ -1,13 +1,13 @@
 import React from 'react';
 
 const skills = [
-    { name: 'Java', level: 85, logo: '/images/java-logo.png' },
-    { name: 'HTML', level: 70, logo: '/images/html-logo.png' },
-    { name: 'CSS', level: 50, logo: '/images/css-logo.png' },
-    { name: 'JavaScript', level: 65, logo: '/images/js-logo.png' },
-    { name: 'React.js', level: 80, logo: '/images/react-logo.png' },
-    { name: 'Node.js', level: 75, logo: '/images/node-logo.png' },
-    { name: 'MongoDB', level: 70, logo: '/images/mongodb-logo.png' },
+    { name: 'Java', level: 85, logo: './images/java-logo.png' },
+    { name: 'HTML', level: 70, logo: './images/html-logo.png' },
+    { name: 'CSS', level: 50, logo: './images/css-logo.png' },
+    { name: 'JavaScript', level: 65, logo: './images/js-logo.png' },
+    { name: 'React.js', level: 80, logo: './images/react-logo.png' },
+    { name: 'Node.js', level: 75, logo: './images/node-logo.png' },
+    { name: 'MongoDB', level: 70, logo: './images/mongodb-logo.png' },
 ]
 
 export default function Skills() {

@@ -14,7 +14,6 @@ export default function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission logic here (e.g., send the form data to a server)
         alert('Form submitted successfully!');
         setFormState({ name: '', email: '', message: '' });
     };
