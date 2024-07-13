@@ -6,28 +6,28 @@ const projects = [
     description: 'Login and signup with password encryption and token stored in cookies.',
     github: 'https://github.com/murali1818/Authentication.git',
     demo: 'https://project-one-demo.com',
-    image: '/images/login.png'
+    image: './images/login.png'
   },
   {
     name: 'TaskManager',
     description: 'Managing tasks.',
     github: 'https://github.com/murali1818/TaskManager.git',
     demo: 'https://taskmanager-demo.com',
-    image: '/images/tm.png'
+    image: './images/tm.png'
   },
   {
     name: 'Bitweb',
     description: 'A web-based bidding application enabling users to sell and purchase products through auctions. Developed complete functionality for both selling and bidding processes.',
     github: 'https://github.com/murali1818/Bitweb.git',
     demo: 'https://bitweb-demo.com',
-    image: '/images/bit.png'
+    image: './images/bit.png'
   },
   {
     name: 'SS-Media',
     description: 'An online e-learning platform where learners can enroll in and access courses, while instructors manage their content and track progress, fostering an interactive educational environment.',
     github: 'https://github.com/murali1818/SS-Media.git',
     demo: 'https://ssmedia-demo.com',
-    image: '/images/ss.png'
+    image: './images/ss.png'
   },
 ];
 
