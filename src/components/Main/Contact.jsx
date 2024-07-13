@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 export default function Contact() {
     const [formState, setFormState] = useState({
@@ -26,7 +28,7 @@ export default function Contact() {
                     <form onSubmit={handleSubmit} className="mt-8 space-y-6">
                         <div>
                             <label htmlFor="name" className="block text-sm font-medium text-gray-200">
-                                Name 
+                                Name
                             </label>
                             <input
                                 id="name"
@@ -59,7 +61,7 @@ export default function Contact() {
                             <textarea
                                 id="message"
                                 name="message"
-                                rows="4"
+                                rows="1"
                                 value={formState.message}
                                 onChange={handleChange}
                                 className="mt-1 p-2 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md bg-gray-300 text-black"
@@ -76,19 +78,25 @@ export default function Contact() {
                         </div>
                     </form>
                 </div>
-                <div className="md:w-1/2  p-5 md:p-10 shadow-md shadow-black rounded-md  text-white">
+                <div className="md:w-1/2 p-5 md:p-10 shadow-md shadow-black rounded-md text-white">
                     <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
                     <p className="mb-4">
                         Feel free to reach out to me via the form or directly through the following contact details.
                     </p>
-                    <p className="mb-2">
-                        <strong>Email:</strong> v.murali1818@gmail.com
+                    <p className="mb-2 flex items-center">
+                        <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
+                        <a href="mailto:v.murali1818@gmail.com" className="hover:underline">
+                            v.murali1818@gmail.com
+                        </a>
                     </p>
-                    <p className="mb-2">
-                        <strong>Phone:</strong> +91 9585024206
+                    <p className="mb-2 flex items-center">
+                        <FontAwesomeIcon icon={faPhone} className="mr-2" />
+                        <a href="tel:+919585024206" className="hover:underline">
+                            +91 9585024206
+                        </a>
                     </p>
                     <p>
-                        <strong>Address:</strong> No.26,Maariyamman kovil street,K.Pudhur,Thirupeyar post,Perambalur District,Tamil Nadu,621107.
+                        <strong>Address:</strong> No.26, Maariyamman Kovil Street, K.Pudhur, Thirupeyar Post, Perambalur District, Tamil Nadu, 621107.
                     </p>
                 </div>
             </div>
